@@ -7,17 +7,27 @@ export const StyledHeader = styled.header`
   font-weight: var(--header-font-weight);
   font-size: var(--header-font-size);
 
-  .container {
+  nav {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem;
+  } 
+
+  .header-container {
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
-  padding: .25rem 2.5rem .25rem 2.5rem;
-  position: fixed;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+  .logo {
+    line-height: 0;
+    margin-right: 1rem;
+  }
 
   .logo-container {
     width: max(125px, 150px, 175px);
@@ -28,11 +38,16 @@ export const StyledHeader = styled.header`
     fill: ${({ theme }) => theme.header.logoColor}
   }
 
-  .logo-and-links {
+  .header-links {
     display: flex;
-    justify-content: center;
+    flex-grow: 1;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+  }
+
+  .header-links > div {
+    display: flex;
+    gap: 2rem;
   }
 
   .login,

@@ -15,6 +15,10 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
+    background-image: linear-gradient(180deg,
+      ${({ theme }) => theme.main.bgGradientStart},
+      ${({ theme }) => theme.main.bgGradientEnd}
+    );
   }
 
   .link {
