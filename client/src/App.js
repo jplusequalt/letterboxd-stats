@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 
 const App = () => {
 
-  const [theme, setTheme] = useState(false)
+  const [theme, setTheme] = useState(true)
 
   const toggleTheme = () => {
     setTheme(!theme)

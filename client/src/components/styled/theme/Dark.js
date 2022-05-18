@@ -12,6 +12,10 @@ export const darkTheme = {
     bgJumbo: "#404850",
     colorJumbo: "white",
   },
+  info: {
+    bg: "#14181c",
+    color: "#9ab"
+  },
   footer: {
     color: "white",
     borderColor: "#2c3440"

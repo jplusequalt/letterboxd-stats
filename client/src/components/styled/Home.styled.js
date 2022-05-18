@@ -41,8 +41,18 @@ export const StyledHome = styled.div`
 
   .import-container {
     border: 1px solid transparent;
+    border-radius: 5px;
     background-color: #00a11d;
+    opacity: 0.8;
     display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    font-weight: 600;
+  }
+
+  .import-container:hover {
+    opacity: 1;
   }
   
   #file-import {
