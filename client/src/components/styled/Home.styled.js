@@ -6,10 +6,6 @@ export const StyledHome = styled.div`
   font-weight: 200;
   color: ${({ theme }) => theme.main.color};
 
-  background-image: linear-gradient(180deg, 
-    ${({ theme }) => theme.main.bgGradientStart},
-    ${({ theme }) => theme.main.bgGradientEnd}
-  );
 
   .home-container {
     margin-top: 1rem;
@@ -25,36 +21,33 @@ export const StyledHome = styled.div`
     padding: 4rem 2rem;
     text-align: center;
     line-height: 3rem;
-    background-color: ${({ theme }) => theme.main.bgHeader};
-    color: ${({ theme }) => theme.main.colorHeader};
+    background-color: ${({ theme }) => theme.main.bgJumbo};
+    color: ${({ theme }) => theme.main.colorJumbo};
   }
 
   .jumbotron > h1 {
     font-weight: 600;
   }
-
-  .login-button {
-    border: 1px solid transparent;
-    border-radius: 5px;
-    line-height: 2rem;
-    padding: 0.25rem 6rem;
-    background-color: #00a11d;
-    color: white;
-    font-weight: 600;
-    opacity: .8;
-    transition: .25s;
-  }
-
-  .login-button:hover {
-    opacity: 1;
-  }
-
   .directions {
+    font-size: 1.15rem;
+    display: block;
     text-decoration: underline;
+    margin-bottom: 1.5rem;
   }
 
   .directions:hover {
     color: #40bcf4;
+  }
+
+  .import-container {
+    border: 1px solid transparent;
+    background-color: #00a11d;
+    display: inline-block;
+  }
+  
+  #file-import {
+    position: absolute;
+    left: -99999rem;
   }
 
 `

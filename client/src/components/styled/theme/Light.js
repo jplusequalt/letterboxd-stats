@@ -9,7 +9,11 @@ export const lightTheme = {
     bgGradientStart: "white",
     bgGradientEnd: "white",
     color: "#556677",
-    bgHeader: "#ddcfff",
-    colorHeader: "black",
+    bgJumbo: "#ddcfff",
+    colorJumbo: "black",
+  },
+  footer: {
+    color: "black",
+    borderColor: "#ddcfff"
   }
 }

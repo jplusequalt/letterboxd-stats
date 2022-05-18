@@ -10,13 +10,7 @@ const Header = () => {
           <div className="logo">
             <Logo />
           </div>
-          <div className="header-links">
-            <div>
-              <Link className="link stats" to="/films?sort=top">Top Ratings</Link>
-              <Link className="link stats" to="/films?sort=recent">Recent ratings</Link>
-            </div>
-            <Link className="link login" to="/login">Login</Link>
-          </div>
+          <p>Import Your Data</p>
         </div>
       </nav>
     </StyledHeader>

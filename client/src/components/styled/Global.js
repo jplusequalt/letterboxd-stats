@@ -4,7 +4,6 @@ const GlobalStyles = createGlobalStyle`
   html {
     --header-font-weight: 600;
     --header-font-size: 1.15rem;
-    --header-font: 'Nunito Sans', sans-serif;
   }
 
   * {

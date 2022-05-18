@@ -9,7 +9,11 @@ export const darkTheme = {
     bgGradientStart: "#2c3440",
     bgGradientEnd: "#14181c",
     color: "#9ab",
-    bgHeader: "#404850",
-    colorHeader: "white",
+    bgJumbo: "#404850",
+    colorJumbo: "white",
+  },
+  footer: {
+    color: "white",
+    borderColor: "#2c3440"
   }
 }

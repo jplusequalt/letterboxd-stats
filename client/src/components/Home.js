@@ -9,10 +9,11 @@ const Home = () => {
         <div className="home-container">
           <div className="jumbotron">
             <h1>View your Letterboxd stats</h1>
-            <p>Login with your Letterboxd account to see stats about your favorite films</p>
-            <Link className="link login-button" to="/login">Login to Letterboxd</Link>
-            <p>Or import your data <span className="directions">directly</span></p>
-            <input type="file"></input>
+            <p><span className="directions">Import your Letterboxd stats from your Letterboxd account below</span></p>
+            <div className="import-container">
+              <input type="file" id="file-import"></input>
+              <label className="import-mask" htmlFor="file-import">Import Your Data</label>
+            </div>
           </div>
         </div>
       </div>
