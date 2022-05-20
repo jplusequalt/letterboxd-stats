@@ -28,11 +28,11 @@ export const StyledHome = styled.div`
   .jumbotron > h1 {
     font-weight: 600;
   }
+
   .directions {
     font-size: 1.15rem;
-    display: block;
     text-decoration: underline;
-    margin-bottom: 1.5rem;
+    cursor: pointer;
   }
 
   .directions:hover {
@@ -40,6 +40,7 @@ export const StyledHome = styled.div`
   }
 
   .import-container {
+    margin-top: 1.5rem;
     border: 1px solid transparent;
     border-radius: 5px;
     background-color: #00a11d;
@@ -49,10 +50,15 @@ export const StyledHome = styled.div`
     padding-right: 1rem;
     color: white;
     font-weight: 600;
+    cursor: pointer;
   }
 
   .import-container:hover {
     opacity: 1;
+  }
+
+  .import-container > label {
+    cursor: pointer;
   }
   
   #file-import {

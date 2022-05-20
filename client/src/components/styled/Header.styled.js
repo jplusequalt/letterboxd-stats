@@ -23,6 +23,10 @@ export const StyledHeader = styled.header`
     align-items: center;
   }
 
+  .header-container > p {
+    cursor: pointer;
+  }
+
   .header-container > p:hover {
     color: ${({ theme }) => theme.header.colorHover};
   }

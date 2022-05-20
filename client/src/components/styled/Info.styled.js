@@ -8,6 +8,9 @@ export const StyledInfo = styled.div`
   width: 30%;
   height: 50%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   position: absolute;
   top: 40%;

@@ -4,7 +4,7 @@ import { StyledHome } from "./styled/Home.styled"
 import Info from "./Info"
 
 
-const Home = () => {
+const Home = ({ handleUpload }) => {
 
   const [showInfo, setShowInfo] = useState(false)
 
@@ -20,7 +20,7 @@ const Home = () => {
               </span>
             </p>
             <div className="import-container">
-              <input type="file" id="file-import"></input>
+              <input type="file" id="file-import" onChange={handleUpload} multiple />
               <label className="import-mask" htmlFor="file-import">Import Your Data</label>
             </div>
           </div>
