@@ -24,6 +24,7 @@ app.post("/api/unzip", (req, res) => {
 
   } else {
     console.error("req.files does not exist")
+    res.status(400).end()
   }
 })
 
