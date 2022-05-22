@@ -19,11 +19,13 @@ app.post("/api/unzip", (req, res) => {
         let data = csv.parse(s, { output: "objects" })
         console.log(data)
         res.json(data)
+        return
       }
     })
 
+    res.status(400).end()
   } else {
-    console.error("req.files does not exist")
+    console.error("Invalid zip file")
     res.status(400).end()
   }
 })

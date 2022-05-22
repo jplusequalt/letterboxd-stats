@@ -16,4 +16,5 @@ export const uploadZip = file => {
   })
 
   return req.then(res => res.data)
+    .catch(err => err.message)
 }

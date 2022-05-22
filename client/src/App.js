@@ -19,10 +19,18 @@ const App = () => {
   }
 
   const handleFileUpload = event => {
-    console.log(event.target.files[0])
+
+    if (event.target.files[0].type !== "application/zip") {
+      window.alert("Must select a zip file!")
+      return
+    }
+
     uploadZip(event.target.files[0])
       .then(data => {
         console.log(data)
+      })
+      .catch(err => {
+        console.log(err)
       })
   }
 

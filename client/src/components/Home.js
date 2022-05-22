@@ -20,7 +20,7 @@ const Home = ({ handleUpload }) => {
               </span>
             </p>
             <div className="import-container">
-              <input type="file" id="file-import" onChange={handleUpload} multiple />
+              <input type="file" id="file-import" onChange={handleUpload} multiple accept=".zip" />
               <label className="import-mask" htmlFor="file-import">Import Your Data</label>
             </div>
           </div>
