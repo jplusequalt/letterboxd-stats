@@ -23,7 +23,11 @@ app.post("/api/unzip", (req, res) => {
       }
     })
 
-    res.status(400).end()
+    console.error("Invalid zip")
+    res.status(400).send({
+      message: "The uploaded zip file is invalid. Make sure you uploaded the correct file.",
+      type: "client"
+    })
   } else {
     console.error("Invalid zip file")
     res.status(400).end()

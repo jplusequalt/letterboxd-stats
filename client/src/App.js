@@ -30,7 +30,7 @@ const App = () => {
         console.log(data)
       })
       .catch(err => {
-        console.log(err)
+        window.alert(`Error: ${err.response.data.message}`)
       })
   }
 
